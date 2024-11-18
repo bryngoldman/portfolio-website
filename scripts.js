@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
         link.href = href;
-        link.title = page;
+        link.text = page;
         listItem.appendChild(link);
         list.appendChild(listItem);
     });
