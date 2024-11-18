@@ -1,13 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projects = [
-        {
-            title: 'Project One',
-            description: 'Description for project one.'
-        },
-        {
-            title: 'Project Two',
-            description: 'Description for project two.'
-        }
+        // add projects here
+        // be sure each project has a title and description
     ];
 
     const projectSection = document.getElementById('projects');
