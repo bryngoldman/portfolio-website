@@ -20,3 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
         projectSection.appendChild(projectDiv);
     });
 }); 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const pages = ["about", "home"];
+
+    const navigationBar = document.getElementById('navigation');
+    const list = document.createElement('ul');
+
+    pages.forEach(page => {
+        const href = `./pages/${page}.html`
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = href;
+        link.title = page;
+        listItem.appendChild(link);
+        list.appendChild(listItem);
+    });
+
+    navigationBar.appendChild(list);
+});
